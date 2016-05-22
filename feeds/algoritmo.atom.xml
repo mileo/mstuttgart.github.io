@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Código Avulso</title><link href="http://codigoavulso.com.br/" rel="alternate"></link><link href="http://codigoavulso.com.br/feeds/algoritmo.atom.xml" rel="self"></link><id>http://codigoavulso.com.br/</id><updated>2014-05-07T20:21:00-07:00</updated><entry><title>Encontrando os divisores de n</title><link href="http://codigoavulso.com.br/encontrando-os-divisores-de-n.html" rel="alternate"></link><published>2014-05-07T20:21:00-07:00</published><author><name>Michell Stuttgart</name></author><id>tag:codigoavulso.com.br,2014-05-07:encontrando-os-divisores-de-n.html</id><summary type="html">&lt;p&gt;Nesta postagem, vamos aprender a criar um algoritmo que imprime todos os divisores de um dado número &lt;strong&gt;n&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Um dado valor &lt;strong&gt;p&lt;/strong&gt;, onde &lt;strong&gt;p&lt;/strong&gt; diferente de &lt;strong&gt;zero&lt;/strong&gt;, é chamado divisor de &lt;strong&gt;n&lt;/strong&gt; se o resultado da divisão de &lt;strong&gt;n&lt;/strong&gt; por &lt;strong&gt;p&lt;/strong&gt; resultar em um quociente inteiro e resto &lt;strong&gt;zero&lt;/strong&gt;. Simplificando...&lt;/p&gt;
+&lt;h4&gt;Exemplo&lt;/h4&gt;
+&lt;p&gt;A divisão 6/2 possui quociente 3 e resto 0. Desse modo, temos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;O dividendo n é 6;&lt;/li&gt;
+&lt;li&gt;O divisor p é 2;&lt;/li&gt;
+&lt;li&gt;O quociente q é 3;&lt;/li&gt;
+&lt;li&gt;O resto r é 0;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Em outras palavras, podemos dizer que:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;**q \* p + r = n =&amp;gt; 3 * 2 + 0 = 6**.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Seguindo outro exemplo:  7/2 possui quociente 3 e resto 1.  &lt;/p&gt;
+&lt;p&gt;Com os exemplos acima, podemos verificar que se um número &lt;strong&gt;n&lt;/strong&gt; é divisivel por &lt;strong&gt;p&lt;/strong&gt;, o resto da divisão de &lt;strong&gt;n&lt;/strong&gt; por &lt;strong&gt;p&lt;/strong&gt; é nulo. Entendido esse conceito, basta passa-lo para o código.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
+
+    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;resto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Digite o valor de n: &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;cin&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="c1"&gt;// Percorremos todo os numeros de 1 a n,   &lt;/span&gt;
+    &lt;span class="c1"&gt;// verificando quais sao divisiveris por n  &lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;  
+
+        &lt;span class="c1"&gt;// Calculamos o resto da divisao   &lt;/span&gt;
+        &lt;span class="c1"&gt;// de n por i, sendo que i vai de 1 a n  &lt;/span&gt;
+        &lt;span class="n"&gt;resto&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+        &lt;span class="c1"&gt;// Se o resto for nulo (0), i e divisor de n.   &lt;/span&gt;
+        &lt;span class="c1"&gt;// Imprimos o valor.&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;resto&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;  
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;  
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;É isso. Até mais pessoal.&lt;/p&gt;</summary><category term="Java"></category><category term="Tutorial"></category><category term="C++"></category><category term="Programação"></category><category term="Algoritmo"></category></entry><entry><title>Encontrando o maior valor de um vetor</title><link href="http://codigoavulso.com.br/encontrando-o-maior-valor-de-um-vetor.html" rel="alternate"></link><published>2014-01-17T20:21:00-07:00</published><author><name>Michell Stuttgart</name></author><id>tag:codigoavulso.com.br,2014-01-17:encontrando-o-maior-valor-de-um-vetor.html</id><summary type="html">&lt;p&gt;Iniciando as nossas postagens, o algoritmo a seguir encontra o maio valor entre um conjunto de valores armazenados em um vetor.
+Os valores são armazenados em um vetor de inteiros e, em seguida, damos início ao processo de procura de maior valor.
+A técnica utilizada é muito simples e pode ser adaptada para encontrarmos o menor valor e até mesmo para realizarmos a ordenação dos valores presentes no vetor em ordem crescente ou decrescente.&lt;/p&gt;
+&lt;p&gt;A seguir temos o algoritmo em C++, mas pode facilmente ser adaptado para outras linguagens.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;argc&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;char&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt; &lt;span class="n"&gt;argv&lt;/span&gt; &lt;span class="p"&gt;){&lt;/span&gt;
+
+       &lt;span class="c1"&gt;// Vetor com os valores que desejamos ordenar&lt;/span&gt;
+       &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;vNumeros&lt;/span&gt;&lt;span class="p"&gt;[]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;};&lt;/span&gt;
+
+       &lt;span class="c1"&gt;// Variavel que recebera o maior valor&lt;/span&gt;
+       &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;maiorValor&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+       &lt;span class="c1"&gt;// Inicializamos maiorValor com o primeiro numero do vetor&lt;/span&gt;
+       &lt;span class="n"&gt;maiorValor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;vNumeros&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+
+       &lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt; &lt;span class="p"&gt;){&lt;/span&gt;
+
+                &lt;span class="c1"&gt;// Aqui esta a parte importante!&lt;/span&gt;
+               &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;vNumeros&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;maiorValor&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+                    &lt;span class="n"&gt;maiorValor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;vNumeros&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+
+
+        &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="c1"&gt;//for&lt;/span&gt;
+
+        &lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;O maior numero e: &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;maiorValor&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Inicialmente, inicializamos a variável maiorValor com o primeiro valor do vetor. Fazemos isso porque ao percorremos o vetor, o começamos do primeiro valor, ou seja, do índice 0 do vetor.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;maiorValor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;vNumeros&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Em seguida, utilizamos o for para percorrermos o vetor a partir da segunda posição, ou seja, do índice 1.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt; &lt;span class="p"&gt;){&lt;/span&gt;
+
+      &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;vNumeros&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;maiorValor&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+           &lt;span class="n"&gt;maiorValor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;vNumeros&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
+
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="c1"&gt;//for&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Lembre-se que o maiorValor está com o valor de vNumeros[0], ou seja, 2.
+Para cada posição do vetor, verificamos se o seu valor é maior que maiorValor. Se for, atualizamos a variável maiorValor com este novo valor.
+Seguindo esse algoritmo, quando terminarmos de percorrer o vetor, teremos na variável maiorValor, o maior valor do vetor, ou seja, o valor 8.
+Vale ressaltar que este algoritmo pode ser utilizado com outros tipos de valores, como floats, doubles, e com strings.&lt;/p&gt;
+&lt;p&gt;Até o próximo tutorial.&lt;/p&gt;</summary><category term="Java"></category><category term="Tutorial"></category><category term="C++"></category><category term="Programação"></category><category term="Algoritmo"></category></entry></feed>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Código Avulso</title><link href="http://codigoavulso.com.br/" rel="alternate"></link><link href="http://codigoavulso.com.br/feeds/temas.atom.xml" rel="self"></link><id>http://codigoavulso.com.br/</id><updated>2014-06-20T09:34:00-07:00</updated><entry><title>Icones para Ubuntu, Linux Mint e derivados</title><link href="http://codigoavulso.com.br/icones-para-ubuntu-linux-mint-e-derivados.html" rel="alternate"></link><published>2014-06-20T09:34:00-07:00</published><author><name>Michell Stuttgart</name></author><id>tag:codigoavulso.com.br,2014-06-20:icones-para-ubuntu-linux-mint-e-derivados.html</id><summary type="html">&lt;h3&gt;Numix Icon Theme Circle&lt;/h3&gt;
+&lt;p&gt;Versão do tema de ícone &lt;a href="https://numixproject.org/"&gt;Numix&lt;/a&gt; com ícones arredondados.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="images/mstuttgart/snapshot_5.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Inicialmente, adicionamos o repositório do tema. Abra o terminal e digite:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo add-apt-repository ppa:numix/ppa
+sudo apt-get update
+sudo apt-get install numix-icon-theme-circle
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Para conhecer a página do projeto, clique &lt;a href="https://numixproject.org/"&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Ardis Icon Theme&lt;/h3&gt;
+&lt;p&gt;Um dos meus temas de ícones preferidos.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="images/mstuttgart/snapshot_6.png" /&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo add-apt-repository ppa:noobslab/icons
+sudo apt-get update
+sudo apt-get install ardis-icons
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Para conhecer a página do projeto, clique &lt;a href="https://github.com/skwerlman/Ardis-icon-theme"&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Humanity Colors Icon Theme&lt;/h3&gt;
+&lt;p&gt;Temas de ícones Humanity em diversas cores.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="images/mstuttgart/snapshot_7.png" /&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo add-apt-repository ppa:ravefinity-project/ppa
+sudo apt-get update
+sudo apt-get install humanity-colors
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Para conhecer a página do projeto, clique &lt;a href="http://www.ravefinity.com/p/humanity-colors-icon-theme.html"&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;É isso pessoal. Até a próxima.&lt;/p&gt;</summary><category term="linux"></category><category term="ubuntu"></category><category term="linux mint"></category><category term="icones"></category><category term="ardis"></category><category term="numix"></category></entry></feed>
