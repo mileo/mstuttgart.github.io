@@ -4,469 +4,469 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>http://codigoavulso.com.br/</loc>
-<lastmod>2016-05-24T12:15:11-00:00</lastmod>
+<loc>http://mstuttgart.com.br/</loc>
+<lastmod>2016-05-24T12:17:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/archives.html</loc>
-<lastmod>2016-05-24T12:15:11-00:00</lastmod>
+<loc>http://mstuttgart.com.br/archives.html</loc>
+<lastmod>2016-05-24T12:17:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tags.html</loc>
-<lastmod>2016-05-24T12:15:11-00:00</lastmod>
+<loc>http://mstuttgart.com.br/tags.html</loc>
+<lastmod>2016-05-24T12:17:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/categories.html</loc>
-<lastmod>2016-05-24T12:15:11-00:00</lastmod>
+<loc>http://mstuttgart.com.br/categories.html</loc>
+<lastmod>2016-05-24T12:17:30-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/gerando-relatorios-de-testes-com-coveralls.html</loc>
+<loc>http://mstuttgart.com.br/gerando-relatorios-de-testes-com-coveralls.html</loc>
 <lastmod>2016-05-18T11:28:55-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/python-com-unittest-travis-ci-coveralls-e-landscape-parte-4-de-4.html</loc>
+<loc>http://mstuttgart.com.br/python-com-unittest-travis-ci-coveralls-e-landscape-parte-4-de-4.html</loc>
 <lastmod>2016-05-07T21:09:18-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/python-com-unittest-travis-ci-coveralls-e-landscape-parte-3-de-4.html</loc>
+<loc>http://mstuttgart.com.br/python-com-unittest-travis-ci-coveralls-e-landscape-parte-3-de-4.html</loc>
 <lastmod>2016-04-29T12:41:38-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/python-com-unittest-travis-ci-coveralls-e-landscape-parte-2-de-4.html</loc>
+<loc>http://mstuttgart.com.br/python-com-unittest-travis-ci-coveralls-e-landscape-parte-2-de-4.html</loc>
 <lastmod>2016-04-19T20:34:44-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/python-com-unittest-travis-ci-coveralls-e-landscape-parte-1-de-4.html</loc>
+<loc>http://mstuttgart.com.br/python-com-unittest-travis-ci-coveralls-e-landscape-parte-1-de-4.html</loc>
 <lastmod>2016-04-12T01:42:18-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/configurando-seu-ambiente-de-desenvolvimento-com-ubuntu-make.html</loc>
+<loc>http://mstuttgart.com.br/configurando-seu-ambiente-de-desenvolvimento-com-ubuntu-make.html</loc>
 <lastmod>2016-03-29T18:46:01-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/dica-de-leitura-guia-manga-de-banco-de-dados.html</loc>
+<loc>http://mstuttgart.com.br/dica-de-leitura-guia-manga-de-banco-de-dados.html</loc>
 <lastmod>2016-03-20T14:41:29-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/backup-e-restore-de-um-banco-de-dados-postgresql.html</loc>
+<loc>http://mstuttgart.com.br/backup-e-restore-de-um-banco-de-dados-postgresql.html</loc>
 <lastmod>2016-03-18T11:59:51-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/criando-diretorios-e-arquivos-usando-expressoes-regulares.html</loc>
+<loc>http://mstuttgart.com.br/criando-diretorios-e-arquivos-usando-expressoes-regulares.html</loc>
 <lastmod>2014-08-30T05:47:00-07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/qchip8-emulator-meu-primeiro-emulador.html</loc>
+<loc>http://mstuttgart.com.br/qchip8-emulator-meu-primeiro-emulador.html</loc>
 <lastmod>2014-06-24T20:11:00-07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/icones-para-ubuntu-linux-mint-e-derivados.html</loc>
+<loc>http://mstuttgart.com.br/icones-para-ubuntu-linux-mint-e-derivados.html</loc>
 <lastmod>2014-06-20T09:34:00-07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/operadores-bit-a-bit-parte-5-de-5-operador-shift.html</loc>
+<loc>http://mstuttgart.com.br/operadores-bit-a-bit-parte-5-de-5-operador-shift.html</loc>
 <lastmod>2014-06-19T09:30:00-07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/operadores-bit-a-bit-parte-4-de-5-operador-not.html</loc>
+<loc>http://mstuttgart.com.br/operadores-bit-a-bit-parte-4-de-5-operador-not.html</loc>
 <lastmod>2014-06-09T20:31:00-07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/operadores-bit-a-bit-parte-3-de-5-operador-xor.html</loc>
+<loc>http://mstuttgart.com.br/operadores-bit-a-bit-parte-3-de-5-operador-xor.html</loc>
 <lastmod>2014-06-09T19:35:00-07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/operadores-bit-a-bit-parte-2-de-5-operador-or.html</loc>
+<loc>http://mstuttgart.com.br/operadores-bit-a-bit-parte-2-de-5-operador-or.html</loc>
 <lastmod>2014-06-05T11:19:00-07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/operadores-bit-a-bit-parte-1-de-5-operador-and.html</loc>
+<loc>http://mstuttgart.com.br/operadores-bit-a-bit-parte-1-de-5-operador-and.html</loc>
 <lastmod>2014-06-04T19:30:00-07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/ambiente-de-desenvolvimento-arduino-sublime-text.html</loc>
+<loc>http://mstuttgart.com.br/ambiente-de-desenvolvimento-arduino-sublime-text.html</loc>
 <lastmod>2014-06-03T17:18:00-07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/fontes-de-texto-serrilhadas-no-kde.html</loc>
+<loc>http://mstuttgart.com.br/fontes-de-texto-serrilhadas-no-kde.html</loc>
 <lastmod>2014-06-03T10:15:00-07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/encontrando-os-divisores-de-n.html</loc>
+<loc>http://mstuttgart.com.br/encontrando-os-divisores-de-n.html</loc>
 <lastmod>2014-05-07T20:21:00-07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/encontrando-o-maior-valor-de-um-vetor.html</loc>
+<loc>http://mstuttgart.com.br/encontrando-o-maior-valor-de-um-vetor.html</loc>
 <lastmod>2014-01-17T20:21:00-07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/category/algoritmo.html</loc>
+<loc>http://mstuttgart.com.br/category/algoritmo.html</loc>
 <lastmod>2014-05-07T20:21:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/category/c.html</loc>
+<loc>http://mstuttgart.com.br/category/c.html</loc>
 <lastmod>2014-06-19T09:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/category/desenvolvimento.html</loc>
+<loc>http://mstuttgart.com.br/category/desenvolvimento.html</loc>
 <lastmod>2016-03-29T18:46:01-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/category/livro.html</loc>
+<loc>http://mstuttgart.com.br/category/livro.html</loc>
 <lastmod>2016-03-20T14:41:29-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/category/projetos.html</loc>
+<loc>http://mstuttgart.com.br/category/projetos.html</loc>
 <lastmod>2014-06-24T20:11:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/category/python.html</loc>
+<loc>http://mstuttgart.com.br/category/python.html</loc>
 <lastmod>2016-05-18T11:28:55-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/category/temas.html</loc>
+<loc>http://mstuttgart.com.br/category/temas.html</loc>
 <lastmod>2014-06-20T09:34:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/category/tutorial.html</loc>
+<loc>http://mstuttgart.com.br/category/tutorial.html</loc>
 <lastmod>2016-03-18T11:59:51-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/kde.html</loc>
+<loc>http://mstuttgart.com.br/tag/kde.html</loc>
 <lastmod>2014-06-03T10:15:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/unittest.html</loc>
+<loc>http://mstuttgart.com.br/tag/unittest.html</loc>
 <lastmod>2016-04-29T12:41:38-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/banco-de-dados.html</loc>
+<loc>http://mstuttgart.com.br/tag/banco-de-dados.html</loc>
 <lastmod>2016-03-20T14:41:29-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/binario.html</loc>
+<loc>http://mstuttgart.com.br/tag/binario.html</loc>
 <lastmod>2014-06-19T09:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/sublime-text.html</loc>
+<loc>http://mstuttgart.com.br/tag/sublime-text.html</loc>
 <lastmod>2014-06-03T17:18:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/travis.html</loc>
+<loc>http://mstuttgart.com.br/tag/travis.html</loc>
 <lastmod>2016-05-07T21:09:18-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/linux.html</loc>
+<loc>http://mstuttgart.com.br/tag/linux.html</loc>
 <lastmod>2016-03-29T18:46:01-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/ubuntu-make.html</loc>
+<loc>http://mstuttgart.com.br/tag/ubuntu-make.html</loc>
 <lastmod>2016-03-29T18:46:01-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/tutorial.html</loc>
+<loc>http://mstuttgart.com.br/tag/tutorial.html</loc>
 <lastmod>2016-03-29T18:46:01-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/git.html</loc>
+<loc>http://mstuttgart.com.br/tag/git.html</loc>
 <lastmod>2016-05-07T21:09:18-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/java.html</loc>
+<loc>http://mstuttgart.com.br/tag/java.html</loc>
 <lastmod>2014-05-07T20:21:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/emulador.html</loc>
+<loc>http://mstuttgart.com.br/tag/emulador.html</loc>
 <lastmod>2014-06-24T20:11:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/arduino.html</loc>
+<loc>http://mstuttgart.com.br/tag/arduino.html</loc>
 <lastmod>2014-06-03T17:18:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/operador-bit-a-bit.html</loc>
+<loc>http://mstuttgart.com.br/tag/operador-bit-a-bit.html</loc>
 <lastmod>2014-06-19T09:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/ardis.html</loc>
+<loc>http://mstuttgart.com.br/tag/ardis.html</loc>
 <lastmod>2014-06-20T09:34:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/landscape.html</loc>
+<loc>http://mstuttgart.com.br/tag/landscape.html</loc>
 <lastmod>2016-05-07T21:09:18-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/numix.html</loc>
+<loc>http://mstuttgart.com.br/tag/numix.html</loc>
 <lastmod>2014-06-20T09:34:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/test.html</loc>
+<loc>http://mstuttgart.com.br/tag/test.html</loc>
 <lastmod>2016-05-18T11:28:55-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/expressao-regular.html</loc>
+<loc>http://mstuttgart.com.br/tag/expressao-regular.html</loc>
 <lastmod>2014-08-30T05:47:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/relatorio.html</loc>
+<loc>http://mstuttgart.com.br/tag/relatorio.html</loc>
 <lastmod>2016-05-18T11:28:55-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/python.html</loc>
+<loc>http://mstuttgart.com.br/tag/python.html</loc>
 <lastmod>2016-05-18T11:28:55-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/livro.html</loc>
+<loc>http://mstuttgart.com.br/tag/livro.html</loc>
 <lastmod>2016-03-20T14:41:29-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/linux-mint.html</loc>
+<loc>http://mstuttgart.com.br/tag/linux-mint.html</loc>
 <lastmod>2014-06-20T09:34:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/coverage.html</loc>
+<loc>http://mstuttgart.com.br/tag/coverage.html</loc>
 <lastmod>2016-05-18T11:28:55-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/ubuntu.html</loc>
+<loc>http://mstuttgart.com.br/tag/ubuntu.html</loc>
 <lastmod>2014-06-20T09:34:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/algoritmo.html</loc>
+<loc>http://mstuttgart.com.br/tag/algoritmo.html</loc>
 <lastmod>2014-06-19T09:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/c.html</loc>
+<loc>http://mstuttgart.com.br/tag/c.html</loc>
 <lastmod>2014-06-19T09:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/coveralls.html</loc>
+<loc>http://mstuttgart.com.br/tag/coveralls.html</loc>
 <lastmod>2016-05-18T11:28:55-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/icones.html</loc>
+<loc>http://mstuttgart.com.br/tag/icones.html</loc>
 <lastmod>2014-06-20T09:34:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/projeto.html</loc>
+<loc>http://mstuttgart.com.br/tag/projeto.html</loc>
 <lastmod>2014-06-24T20:11:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/desenvolvimento.html</loc>
+<loc>http://mstuttgart.com.br/tag/desenvolvimento.html</loc>
 <lastmod>2016-03-29T18:46:01-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/travis-ci.html</loc>
+<loc>http://mstuttgart.com.br/tag/travis-ci.html</loc>
 <lastmod>2016-04-29T12:41:38-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/programacao.html</loc>
+<loc>http://mstuttgart.com.br/tag/programacao.html</loc>
 <lastmod>2014-05-07T20:21:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/software.html</loc>
+<loc>http://mstuttgart.com.br/tag/software.html</loc>
 <lastmod>2014-06-24T20:11:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/author/michell-stuttgart.html</loc>
+<loc>http://mstuttgart.com.br/author/michell-stuttgart.html</loc>
 <lastmod>2016-05-18T11:28:55-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
