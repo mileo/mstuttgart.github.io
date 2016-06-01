@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://mstuttgart.com.br/</loc>
-<lastmod>2016-05-31T17:45:18-00:00</lastmod>
+<lastmod>2016-06-01T04:40:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mstuttgart.com.br/archives.html</loc>
-<lastmod>2016-05-31T17:45:18-00:00</lastmod>
+<lastmod>2016-06-01T04:40:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mstuttgart.com.br/tags.html</loc>
-<lastmod>2016-05-31T17:45:18-00:00</lastmod>
+<lastmod>2016-06-01T04:40:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mstuttgart.com.br/categories.html</loc>
-<lastmod>2016-05-31T17:45:18-00:00</lastmod>
+<lastmod>2016-06-01T04:40:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -186,6 +186,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://mstuttgart.com.br/category/banco-de-dados.html</loc>
+<lastmod>2016-03-18T11:59:51-03:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://mstuttgart.com.br/category/c.html</loc>
 <lastmod>2014-06-19T09:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
@@ -236,6 +243,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://mstuttgart.com.br/category/tutorial.html</loc>
+<lastmod>2014-08-30T05:47:00-03:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mstuttgart.com.br/tag/restore.html</loc>
 <lastmod>2016-03-18T11:59:51-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -333,6 +347,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://mstuttgart.com.br/tag/ardis.html</loc>
+<lastmod>2014-06-20T09:34:00-03:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://mstuttgart.com.br/tag/operador-bit-a-bit.html</loc>
 <lastmod>2014-06-19T09:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
@@ -340,8 +361,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://mstuttgart.com.br/tag/ardis.html</loc>
-<lastmod>2014-06-20T09:34:00-03:06</lastmod>
+<loc>http://mstuttgart.com.br/tag/dicas.html</loc>
+<lastmod>2016-05-26T15:13:46-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -417,8 +438,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://mstuttgart.com.br/tag/dicas.html</loc>
-<lastmod>2016-05-26T15:13:46-03:06</lastmod>
+<loc>http://mstuttgart.com.br/tag/postgresql.html</loc>
+<lastmod>2016-03-18T11:59:51-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -482,6 +503,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://mstuttgart.com.br/tag/programacao.html</loc>
 <lastmod>2014-05-07T20:21:00-03:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://mstuttgart.com.br/tag/backup.html</loc>
+<lastmod>2016-03-18T11:59:51-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

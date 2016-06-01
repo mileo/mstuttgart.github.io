@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Michell Stuttgart</title><link href="http://mstuttgart.com.br/" rel="alternate"></link><link href="http://mstuttgart.com.br/feeds/banco-de-dados.atom.xml" rel="self"></link><id>http://mstuttgart.com.br/</id><updated>2016-03-18T11:59:51-03:00</updated><entry><title>Backup e Restore de um banco de dados PostgreSQL</title><link href="http://mstuttgart.com.br/backup-e-restore-de-um-banco-de-dados-postgresql.html" rel="alternate"></link><published>2016-03-18T11:59:51-03:00</published><author><name>Michell Stuttgart</name></author><id>tag:mstuttgart.com.br,2016-03-18:backup-e-restore-de-um-banco-de-dados-postgresql.html</id><summary type="html">&lt;p&gt;Quando trabalhamos com alguma aplicações que faz uso de um banco de dados, muitas vezes precisamos realizar um &lt;code&gt;backup&lt;/code&gt; do nosso banco (antes de alguma atualização importante na aplicação) ou executar o &lt;code&gt;restore&lt;/code&gt; desse banco caso seja necessário.&lt;/p&gt;
+&lt;p&gt;Eu trabalhei por um tempo desenvolvendo funcionalidades para o ERP Odoo. Esse ERP faz uso do PostgreSQL, e frequentemente eu precisava realizar &lt;code&gt;backup&lt;/code&gt; e &lt;code&gt;restore&lt;/code&gt; dos bancos que criava para atualizar as máquinas dos clientes. Então, segue abaixo o procedimento que eu utilizava.&lt;/p&gt;
+&lt;h3&gt;Backup&lt;/h3&gt;
+&lt;p&gt;Para realizar o &lt;code&gt;backup&lt;/code&gt;, primeiro precisamos logar como usuário &lt;code&gt;postgres&lt;/code&gt;. No terminal entre com:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo su - postgres
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Uma vez logado, voce pode reparar que o nome de usuário no terminal mudou. Caso seja necessário, é possível visualizar a lista de bancos existentes na sua máquina através do comando abaixo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;psql -l
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Agora, vamos realizar o backup do banco com o seguinte comando:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pg_dump -Fc nome_banco &amp;gt; nome_banco_backup.dump
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Assim será criado um arquivo com a extensão &lt;code&gt;.dump&lt;/code&gt; no diretório &lt;code&gt;/var/lib/postgressql&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Também podemos incrementar o comando de modo a deixarmos registrado o dia, hora e minuto em que o &lt;code&gt;backup&lt;/code&gt; foi realizado, algo muito útil caso você precise realizar a restauração do banco.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pg_dump -Fc nome_banco &amp;gt; nome_banco-backup-`date +%Y-%m-%d-%H-%M`.dump
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Restore&lt;/h3&gt;
+&lt;p&gt;A restauração do banco é tão simples quanto o &lt;code&gt;backup&lt;/code&gt;.
+Primeiramente, vamos criar uma entrada para o banco que será restaurado.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;createdb banco_do_cliente_x
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Apenas uma observação, antes de criar uma entrada para o novo banco, é uma boa prática verificar se já não existe outro banco com o mesmo nome. Isso pode ser feito com o comando &lt;code&gt;psql -l&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Caso o seu objetivo seja mesmo substituir o banco &lt;code&gt;banco_do_cliente_x&lt;/code&gt;, você pode usar o comando abaixo:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;dropdb banco_do_cliente_x
+createdb banco_do_cliente_x
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Finalmente realizamos o &lt;code&gt;restore&lt;/code&gt; do banco com o comando:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pg_restore -d banco_do_cliente_x banco_backup.dump
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Vale lembrar que para executar o comando acima, o arquivo .dump deve estar no diretório &lt;code&gt;/var/lib/postgressql&lt;/code&gt; (mova o arquivo para esse diretório caso ele ainda não esteja).&lt;/p&gt;
+&lt;p&gt;É isso pessoal. Esse dica já me salvou muito vezes e espero que seja útil para vocês também.&lt;/p&gt;
+&lt;p&gt;Até o próximo post!&lt;/p&gt;</summary><category term="linux"></category><category term="tutorial"></category><category term="banco de dados"></category><category term="backup"></category><category term="restore"></category><category term="postgresql"></category></entry></feed>
