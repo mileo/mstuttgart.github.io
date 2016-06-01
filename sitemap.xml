@@ -5,34 +5,34 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://mstuttgart.com.br/</loc>
-<lastmod>2016-06-01T22:51:03-00:00</lastmod>
+<lastmod>2016-06-01T22:53:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mstuttgart.com.br/archives.html</loc>
-<lastmod>2016-06-01T22:51:03-00:00</lastmod>
+<lastmod>2016-06-01T22:53:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mstuttgart.com.br/tags.html</loc>
-<lastmod>2016-06-01T22:51:03-00:00</lastmod>
+<lastmod>2016-06-01T22:53:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://mstuttgart.com.br/categories.html</loc>
-<lastmod>2016-06-01T22:51:03-00:00</lastmod>
+<lastmod>2016-06-01T22:53:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://mstuttgart.com.br/como-distribuir-seu-projeto-python-com-pypi.html</loc>
+<loc>http://mstuttgart.com.br/como-distribuir-sua-aplicacao-python-com-pypi.html</loc>
 <lastmod>2016-06-01T13:47:24-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
