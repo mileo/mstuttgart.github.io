@@ -12,9 +12,20 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;No exemplo acima, vamos reverter o intervalo que vai do quinto &lt;em&gt;commit&lt;/em&gt; (incluindo o mesmo) mais recente ao terceiro &lt;em&gt;commit&lt;/em&gt; mais recente. Repare que o intervalor funciona da seguiten forma: &lt;code&gt;[commit antigo, commit recent[&lt;/code&gt;. O intervalo inclui o &lt;em&gt;commit&lt;/em&gt; mais antigo e vai até o &lt;em&gt;commit&lt;/em&gt; mais recente, NÃO incluindo este último.&lt;/p&gt;
+&lt;p&gt;No exemplo acima, vamos reverter o intervalo que vai do quinto &lt;em&gt;commit&lt;/em&gt; (incluindo o mesmo) mais recente ao terceiro &lt;em&gt;commit&lt;/em&gt; mais recente. Repare que o intervalor funciona da seguiten forma: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[commit antigo, commit recent[&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;O intervalo inclui o &lt;em&gt;commit&lt;/em&gt; mais antigo e vai até o &lt;em&gt;commit&lt;/em&gt; mais recente, NÃO incluindo este último.&lt;/p&gt;
 &lt;p&gt;Outra possibilidade é utilizar a &lt;em&gt;hash&lt;/em&gt; dos &lt;em&gt;commits&lt;/em&gt; seja passando uma &lt;em&gt;hash&lt;/em&gt; unica ou um intervalo. Por exemplo:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git revert -n f44db377210fad4f1980663f58d4be9fa9c09e36..f167fc86d574a25393d50f11e620a9364cf6257f
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git revert -n f44db3..f167fc
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ou apenas&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git revert f44db3
 &lt;/pre&gt;&lt;/div&gt;
 
 
