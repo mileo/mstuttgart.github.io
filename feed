@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Código Avulso</title><link>http://codigoavulso.com.br/</link><description></description><lastBuildDate>Thu, 07 Jul 2016 13:04:11 -0300</lastBuildDate><item><title>Mint-X KDE colors</title><link>http://codigoavulso.com.br/mint-x-kde-colors.html</link><description>&lt;p&gt;Fala pessoal, tudo tranquilo?&lt;/p&gt;
+<rss version="2.0"><channel><title>Código Avulso</title><link>http://codigoavulso.com.br/</link><description></description><lastBuildDate>Sun, 31 Jul 2016 16:28:36 -0300</lastBuildDate><item><title>Consultando CEP com pycep-correios</title><link>http://codigoavulso.com.br/consultando-cep-com-pycep-correios.html</link><description>&lt;p&gt;Boa tarde, pessoal. Tudo certo?&lt;/p&gt;
+&lt;p&gt;Neste &lt;em&gt;post&lt;/em&gt; irei falar um pouco sobre um pequeno projeto meu. Trata-se do &lt;a href="https://github.com/mstuttgart/pycep-correios"&gt;PyCEP Correios&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;O &lt;a href="https://github.com/mstuttgart/pycep-correios"&gt;PyCEP Correios&lt;/a&gt; é uma api desenvolvida em Python que realiza a busca dos dados de um dado CEP diretamente no webservice dos correios, sendo essa a principal diferença em relação a outras api's de consulta de CEP. O retorno dessa consulta é um &lt;em&gt;dict&lt;/em&gt; contentdo os dados do endereço pertencente ao CEP. Este projeto foi iniciado por mim para fins de estudo, porém ele pode ser utilizado normalmente em projetos mais sérios.&lt;/p&gt;
+&lt;h3&gt;Instalação&lt;/h3&gt;
+&lt;p&gt;O PyCEP Correios pode ser facilmente instalado com o comando a seguir (apenas para python3):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install pycep-correios
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Como usar&lt;/h3&gt;
+&lt;p&gt;Consultar o endereço de um CEP é muito simples com o &lt;a href="https://github.com/mstuttgart/pycep-correios"&gt;PyCEP Correios&lt;/a&gt;. Não importa se o CEP fornecido possui hífen ou ponto. O PyCEPCorreios trata a entrada garantindo uma entrada válida para o &lt;em&gt;webservice&lt;/em&gt; dos Correios.&lt;/p&gt;
+&lt;p&gt;Veja os exemplos a seguir:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pycep_correios.correios&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Correios&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Tambem pode ser usado .get_cep(&amp;#39;37503130&amp;#39;)&lt;/span&gt;
+&lt;span class="n"&gt;endereco&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Correios&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_cep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;37503130&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;endereco&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;rua&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;endereco&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;bairro&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;endereco&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;cidade&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;endereco&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;complemento&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;endereco&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;uf&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;endereco&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;outro&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Outro exemplo, usando o CEP anterior, porém com hífen e ponto.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pycep_correios.correios&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Correios&lt;/span&gt;
+
+&lt;span class="n"&gt;endereco&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Correios&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_cep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;37.503-130&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;endereco&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;rua&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;endereco&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;bairro&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;endereco&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;cidade&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;endereco&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;complemento&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;endereco&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;uf&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;endereco&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;outro&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Um exemplo alternativo, enviamos um CEP incorreto, com o numero de digitos inferior a 8.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pycep_correios.correios&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Correios&lt;/span&gt;
+
+&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;endereco&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Correios&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_cep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;37.50-130&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;except&lt;/span&gt; &lt;span class="n"&gt;CorreiosCEPInvalidCEPException&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;exc&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;exc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Conclusão&lt;/h3&gt;
+&lt;p&gt;É isso pessoal. Este &lt;em&gt;post&lt;/em&gt; foi feito simplemesnte para apresentação do &lt;a href="https://github.com/mstuttgart/pycep-correios"&gt;PyCEP Correios&lt;/a&gt;. Eu recentemente migrei toda api para utilização do Python 3.4. A api usada para consulta (&lt;em&gt;suds&lt;/em&gt;) foi substituída pela &lt;em&gt;requests&lt;/em&gt;, já que esse ultimo tem um desenvolvimento ativo. Espero que o módulo seja útil a vocês. Se alguém possuir alguma crítica ou sugestão sinta-se livre para comentar.&lt;/p&gt;
+&lt;p&gt;Obrigado por ler até aqui! Até o próximo &lt;em&gt;post&lt;/em&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michell Stuttgart</dc:creator><pubDate>Sun, 31 Jul 2016 16:28:36 -0300</pubDate><guid isPermaLink="false">tag:codigoavulso.com.br,2016-07-31:consultando-cep-com-pycep-correios.html</guid><category>correios</category><category>python</category><category>api</category><category>cep</category></item><item><title>Mint-X KDE colors</title><link>http://codigoavulso.com.br/mint-x-kde-colors.html</link><description>&lt;p&gt;Fala pessoal, tudo tranquilo?&lt;/p&gt;
 &lt;p&gt;Desde quando comecei a ser um usuário Linux, há alguns anos, sempre gostei muito da distribuição &lt;a href="http://www.linuxmint.com.br"&gt;Linux Mint&lt;/a&gt;, preferêncialmente a versão com o ambiente gráfico &lt;a href="https://pt.wikipedia.org/wiki/KDE"&gt;KDE&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Na versão 17.1, o &lt;a href="http://www.linuxmint.com.br"&gt;Linux Mint&lt;/a&gt; trouxe um conjunto de ícones denominados &lt;a href="https://www.gnome-look.org/content/show.php/Mint+X+Colors+Icon+Theme?content=165531"&gt;Mint-X&lt;/a&gt;. Entretanto, diferente de outros ambientes gráficos como o Mate ou Cinnamon, o KDE não possuia temas de cores que combinavam com os novos ícones. Diante desse fato decidi criar temas de cores para combinar com cada conjunto de ícones.&lt;/p&gt;
 &lt;h3&gt;Screenshots&lt;/h3&gt;
