@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Código Avulso</title><link href="http://codigoavulso.com.br/" rel="alternate"></link><link href="http://codigoavulso.com.br/feeds/python.atom.xml" rel="self"></link><id>http://codigoavulso.com.br/</id><updated>2016-07-31T16:28:36-03:00</updated><entry><title>Consultando CEP com pycep-correios</title><link href="http://codigoavulso.com.br/consultando-cep-com-pycep-correios.html" rel="alternate"></link><published>2016-07-31T16:28:36-03:00</published><author><name>Michell Stuttgart</name></author><id>tag:codigoavulso.com.br,2016-07-31:consultando-cep-com-pycep-correios.html</id><summary type="html">&lt;p&gt;Boa tarde, pessoal. Tudo certo?&lt;/p&gt;
 &lt;p&gt;Neste &lt;em&gt;post&lt;/em&gt; irei falar um pouco sobre um pequeno projeto meu. Trata-se do &lt;a href="https://github.com/mstuttgart/pycep-correios"&gt;PyCEP Correios&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;O &lt;a href="https://github.com/mstuttgart/pycep-correios"&gt;PyCEP Correios&lt;/a&gt; é uma api desenvolvida em Python que realiza a busca dos dados de um dado CEP diretamente no webservice dos correios, sendo essa a principal diferença em relação a outras api's de consulta de CEP. O retorno dessa consulta é um &lt;em&gt;dict&lt;/em&gt; contentdo os dados do endereço pertencente ao CEP. Este projeto foi iniciado por mim para fins de estudo, porém ele pode ser utilizado normalmente em projetos mais sérios.&lt;/p&gt;
+&lt;p&gt;O &lt;a href="https://github.com/mstuttgart/pycep-correios"&gt;PyCEP Correios&lt;/a&gt; é uma api desenvolvida em Python que realiza a busca dos dados de um dado CEP diretamente no &lt;em&gt;webservice&lt;/em&gt; dos Correios, sendo essa a principal diferença em relação a outras api's de consulta de CEP. O retorno dessa consulta é um &lt;em&gt;dict&lt;/em&gt; contendo os dados do endereço pertencente ao CEP. Este projeto foi iniciado por mim para fins de estudo, porém ele pode ser utilizado normalmente em projetos mais sérios.&lt;/p&gt;
 &lt;h3&gt;Instalação&lt;/h3&gt;
 &lt;p&gt;O PyCEP Correios pode ser facilmente instalado com o comando a seguir (apenas para python3):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install pycep-correios
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip3 install pycep-correios
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h3&gt;Como usar&lt;/h3&gt;
-&lt;p&gt;Consultar o endereço de um CEP é muito simples com o &lt;a href="https://github.com/mstuttgart/pycep-correios"&gt;PyCEP Correios&lt;/a&gt;. Não importa se o CEP fornecido possui hífen ou ponto. O PyCEPCorreios trata a entrada garantindo uma entrada válida para o &lt;em&gt;webservice&lt;/em&gt; dos Correios.&lt;/p&gt;
+&lt;p&gt;Consultar o endereço de um CEP é muito simples com o &lt;a href="https://github.com/mstuttgart/pycep-correios"&gt;PyCEP Correios&lt;/a&gt;. Não importa se o CEP fornecido possui hífen ou ponto. O &lt;a href="https://github.com/mstuttgart/pycep-correios"&gt;PyCEP Correios&lt;/a&gt; trata a entrada garantindo uma entrada válida para o &lt;em&gt;webservice&lt;/em&gt; dos Correios.&lt;/p&gt;
 &lt;p&gt;Veja os exemplos a seguir:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pycep_correios.correios&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Correios&lt;/span&gt;
 
@@ -25,7 +25,7 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Outro exemplo, usando o CEP anterior, porém com hífen e ponto.&lt;/p&gt;
+&lt;p&gt;Outro exemplo, usando o CEP anterior, porém com hífen "-" e ponto ".".&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;pycep_correios.correios&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Correios&lt;/span&gt;
 
 &lt;span class="n"&gt;endereco&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Correios&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_cep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;37.503-130&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -50,7 +50,7 @@
 
 
 &lt;h3&gt;Conclusão&lt;/h3&gt;
-&lt;p&gt;É isso pessoal. Este &lt;em&gt;post&lt;/em&gt; foi feito simplemesnte para apresentação do &lt;a href="https://github.com/mstuttgart/pycep-correios"&gt;PyCEP Correios&lt;/a&gt;. Eu recentemente migrei toda api para utilização do Python 3.4. A api usada para consulta (&lt;em&gt;suds&lt;/em&gt;) foi substituída pela &lt;em&gt;requests&lt;/em&gt;, já que esse ultimo tem um desenvolvimento ativo. Espero que o módulo seja útil a vocês. Se alguém possuir alguma crítica ou sugestão sinta-se livre para comentar.&lt;/p&gt;
+&lt;p&gt;É isso pessoal. Este &lt;em&gt;post&lt;/em&gt; foi feito simplemesnte para apresentação do &lt;a href="https://github.com/mstuttgart/pycep-correios"&gt;PyCEP Correios&lt;/a&gt;. Eu recentemente migrei toda api para Python 3.4. A api usada para consulta (&lt;em&gt;suds&lt;/em&gt;) foi substituída pela &lt;em&gt;requests&lt;/em&gt;, já que esse ultimo tem um desenvolvimento ativo. Espero que o módulo seja útil a vocês. Se alguém possuir alguma crítica ou sugestão sinta-se livre para comentar.&lt;/p&gt;
 &lt;p&gt;Obrigado por ler até aqui! Até o próximo &lt;em&gt;post&lt;/em&gt;.&lt;/p&gt;</summary><category term="correios"></category><category term="python"></category><category term="api"></category><category term="cep"></category></entry><entry><title>Como distribuir sua aplicação Python com PyPI</title><link href="http://codigoavulso.com.br/como-distribuir-sua-aplicacao-python-com-pypi.html" rel="alternate"></link><published>2016-06-01T13:47:24-03:00</published><author><name>Michell Stuttgart</name></author><id>tag:codigoavulso.com.br,2016-06-01:como-distribuir-sua-aplicacao-python-com-pypi.html</id><summary type="html">&lt;p&gt;Imagine a seguinte situação: você passou alguns dias (ou mesmo meses) desenvolvendo uma módulo python, escreveu testes, implementou funcionalidades e depois de alguns ajustes, chegou a hora de liberar seu software para que outros desenvolvedores possam utilizá-lo. Qual o melhor modo de distribuí-lo?&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="images/mstuttgart/snapshot_44.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Caro leitor, se você costuma programar em Python (seja profissionalmente ou não) provavelmente já instalou outros módulos usando o &lt;a href="https://pypi.python.org/pypi"&gt;PyPI&lt;/a&gt;, através do comando abaixo:&lt;/p&gt;
