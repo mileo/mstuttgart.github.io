@@ -1,5 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Código Avulso</title><link>http://codigoavulso.com.br/</link><description></description><lastBuildDate>Sun, 31 Jul 2016 16:28:36 -0300</lastBuildDate><item><title>Consultando CEP com pycep-correios</title><link>http://codigoavulso.com.br/consultando-cep-com-pycep-correios.html</link><description>&lt;p&gt;Boa tarde, pessoal. Tudo certo?&lt;/p&gt;
+<rss version="2.0"><channel><title>Código Avulso</title><link>http://codigoavulso.com.br/</link><description></description><lastBuildDate>Tue, 30 Aug 2016 20:27:15 -0300</lastBuildDate><item><title>Personalize o seu terminal com prezto + zsh</title><link>http://codigoavulso.com.br/personalize-o-seu-terminal-com-prezto-zsh.html</link><description>&lt;p&gt;Fala pessoal, tudo bem?&lt;/p&gt;
+&lt;p&gt;As últimas semanas foram de muita correria pra mim (pretendo falar sobre isso em futura postagem) e por isso faz tempo que não publico algo no blog. Mas hoje, venho quebrar esse jejum de postagens como uma ferramenta que faz parte do meu dia-a-dia de desenvolvedor e sempre se mostra indispensável. Sim, estamos falado do terminal!&lt;/p&gt;
+&lt;p&gt;O &lt;em&gt;shell&lt;/em&gt; padrão das distribuições é o &lt;code&gt;bash&lt;/code&gt;. Entretanto existem outras opções, entre os quais eu cito o &lt;code&gt;zsh&lt;/code&gt;, um &lt;em&gt;sheel&lt;/em&gt; que após você começar, não vai conseguir mais deixar de usá-lo.&lt;/p&gt;
+&lt;p&gt;O &lt;code&gt;zsh&lt;/code&gt; traz consigo uma grande quantidade de recursos que não estão presentes no &lt;code&gt;bash&lt;/code&gt;, e são eles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;autocomplete&lt;/em&gt; para os comandos digitados;&lt;/li&gt;
+&lt;li&gt;correção do comando com erros de digitação;&lt;/li&gt;
+&lt;li&gt;exibição de uma listagem de diretórios e arquivos de acordo com as letras digitidas no &lt;em&gt;prompt&lt;/em&gt;;&lt;/li&gt;
+&lt;li&gt;histórico de comandos compartilhado por todos os terminais;&lt;/li&gt;
+&lt;li&gt;possibilidade de extender e adicionar novas funcionalidades e temas e &lt;em&gt;plugins&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Neste &lt;em&gt;post&lt;/em&gt; vamos explorar mais os recursos do &lt;code&gt;zsh&lt;/code&gt; e adicionar novas funcionalidades ao mesmo através do &lt;em&gt;framework&lt;/em&gt; &lt;code&gt;prezto&lt;/code&gt;.&lt;/p&gt;
+&lt;h4&gt;Instalação&lt;/h4&gt;
+&lt;p&gt;Primeiramente, vamos instalar o &lt;code&gt;zsh&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install zsh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Para usufruir de mais recursos, pode utilizar o &lt;em&gt;framework&lt;/em&gt; &lt;a href="https://github.com/sorin-ionescu/prezto"&gt;prezto&lt;/a&gt;. Ele possui alguns &lt;em&gt;plugins&lt;/em&gt; que aumentam a produtividade do &lt;code&gt;zsh&lt;/code&gt;. Para instalá-lo, precisamos primeiramente ter o &lt;code&gt;git&lt;/code&gt; instalado.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install git
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Agora realizamos o &lt;em&gt;clone&lt;/em&gt; do repositório do &lt;code&gt;prezto&lt;/code&gt;. Aqui usaremos o &lt;em&gt;fork&lt;/em&gt; que fiz do repositório original, pois dessa maneira tema e plugins úteis já vem habilitados.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone --recursive https://github.com/mstuttgart/prezto.git &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;ZDOTDIR&lt;/span&gt;&lt;span class="k"&gt;:-&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;/.zprezto&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;No diretório &lt;em&gt;home&lt;/em&gt; do seu usuário, iremos criar alguns links nencessários para o funcionamento do &lt;code&gt;zprezto&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ln -s ~/.zprezto/runcoms/zlogin ~/.zlogin
+ln -s ~/.zprezto/runcoms/zlogout ~/.zlogout
+ln -s ~/.zprezto/runcoms/zpreztorc ~/.zpreztorc
+ln -s ~/.zprezto/runcoms/zprofile ~/.zprofile
+ln -s ~/.zprezto/runcoms/zshenv ~/.zshenv
+ln -s ~/.zprezto/runcoms/zshrc ~/.zshrc
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Agora basta executarmos o &lt;code&gt;zsh&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;zsh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Para definir o &lt;code&gt;zsh&lt;/code&gt;como &lt;em&gt;prompt&lt;/em&gt; padrão basta entrar com o comando:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo chsh -s /usr/bin/zsh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;e abrir uma nova aba ou janela de terminal. Você pode também trocar o &lt;em&gt;prompt&lt;/em&gt; diretamente na tela de configurações do seu terminal, conforme a imagem abaixo:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="http://jr0cket.co.uk/2013/09/hey-prezto-zsh-for-command-line-heaven.html" src="images/mstuttgart/snapshot_45.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Imagem retirada do seguinte tutorial: &lt;a href="http://jr0cket.co.uk/2013/09/hey-prezto-zsh-for-command-line-heaven.html"&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;Plugins&lt;/h4&gt;
+&lt;p&gt;Os módulos (plugins) disponíveis podem ser visualizados no diretótio &lt;code&gt;modules&lt;/code&gt; dentro do diretório de instalação do &lt;code&gt;zprezto&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;~/.zprezto/modules
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Os módulos que você deseja utilizar podem ser adicionados no arquivo &lt;code&gt;~/.zpreztorc&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Set the Prezto modules to load (browse modules).&lt;/span&gt;
+&lt;span class="c1"&gt;# The order matters.&lt;/span&gt;
+zstyle &lt;span class="s1"&gt;&amp;#39;:prezto:load&amp;#39;&lt;/span&gt; pmodule &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="s1"&gt;&amp;#39;environment&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="s1"&gt;&amp;#39;terminal&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="s1"&gt;&amp;#39;editor&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="s1"&gt;&amp;#39;history&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="s1"&gt;&amp;#39;directory&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="s1"&gt;&amp;#39;spectrum&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="s1"&gt;&amp;#39;utility&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="s1"&gt;&amp;#39;git&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="s1"&gt;&amp;#39;completion&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="s1"&gt;&amp;#39;prompt&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="s1"&gt;&amp;#39;adicione o plugin aqui&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Temas&lt;/h4&gt;
+&lt;p&gt;A lista de temas pode ser visualizada com o comando:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;prompt -l
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Para visualizar um tema em expecífico no terminal, basta utilizar o comando e em seguida abrir um nova aba no terminal.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;prompt -p nomedotema
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Para utilizar o tema de maneira permanente, basta adicioná-lo no arquivo &lt;code&gt;~/.zpreztorc&lt;/code&gt; entre aspas simples, na sessão destinada a entrada de temas:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# Prompt&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Set the prompt theme to load.&lt;/span&gt;
+&lt;span class="c1"&gt;# Setting it to &amp;#39;random&amp;#39; loads a random theme.&lt;/span&gt;
+&lt;span class="c1"&gt;# Auto set to &amp;#39;off&amp;#39; on dumb terminals.&lt;/span&gt;
+zstyle &lt;span class="s1"&gt;&amp;#39;:prezto:module:prompt&amp;#39;&lt;/span&gt; theme &lt;span class="s1"&gt;&amp;#39;nomedotema&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Conclusão&lt;/h4&gt;
+&lt;p&gt;Além do &lt;code&gt;prezto&lt;/code&gt;, existem outras opções de &lt;em&gt;frameworks&lt;/em&gt; como o &lt;a href="https://github.com/robbyrussell/oh-my-zsh"&gt;Oh my Zsh!&lt;/a&gt;. Porém, apensar do mesmo possuir um número superior de temas e plugins, o &lt;code&gt;prezto&lt;/code&gt; é de longe o mais rápido. Utilizo ele a anos e é uma ferramenta valiosa, principalmente para que é desenvolvedor.&lt;/p&gt;
+&lt;p&gt;É isso pessoal. Espero que gostem de utilizar o Zsh. Até o próximo post!&lt;/p&gt;
+&lt;h4&gt;Referências&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://jr0cket.co.uk/2013/09/hey-prezto-zsh-for-command-line-heaven.html"&gt;hey-prezto-zsh-for-command-line-heaven&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://mikebuss.com/2014/04/07/customizing-prezto/"&gt;customizing-prezto/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sorin-ionescu/prezto"&gt;prezto-github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Michell Stuttgart</dc:creator><pubDate>Tue, 30 Aug 2016 20:27:15 -0300</pubDate><guid isPermaLink="false">tag:codigoavulso.com.br,2016-08-30:personalize-o-seu-terminal-com-prezto-zsh.html</guid><category>zhs</category><category>prezto</category><category>linux</category><category>bash</category><category>terminal</category></item><item><title>Consultando CEP com pycep-correios</title><link>http://codigoavulso.com.br/consultando-cep-com-pycep-correios.html</link><description>&lt;p&gt;Boa tarde, pessoal. Tudo certo?&lt;/p&gt;
 &lt;p&gt;Neste &lt;em&gt;post&lt;/em&gt; irei falar um pouco sobre um pequeno projeto meu. Trata-se do &lt;a href="https://github.com/mstuttgart/pycep-correios"&gt;PyCEP Correios&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;O &lt;a href="https://github.com/mstuttgart/pycep-correios"&gt;PyCEP Correios&lt;/a&gt; é uma api desenvolvida em Python que realiza a busca dos dados de um dado CEP diretamente no &lt;em&gt;webservice&lt;/em&gt; dos Correios, sendo essa a principal diferença em relação a outras api's de consulta de CEP. O retorno dessa consulta é um &lt;em&gt;dict&lt;/em&gt; contendo os dados do endereço pertencente ao CEP. Este projeto foi iniciado por mim para fins de estudo, porém ele pode ser utilizado normalmente em projetos mais sérios.&lt;/p&gt;
 &lt;h3&gt;Instalação&lt;/h3&gt;

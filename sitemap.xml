@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://codigoavulso.com.br/</loc>
-<lastmod>2016-08-02T17:43:06-00:00</lastmod>
+<lastmod>2016-09-14T10:25:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://codigoavulso.com.br/archives.html</loc>
-<lastmod>2016-08-02T17:43:06-00:00</lastmod>
+<lastmod>2016-09-14T10:25:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://codigoavulso.com.br/tags.html</loc>
-<lastmod>2016-08-02T17:43:06-00:00</lastmod>
+<lastmod>2016-09-14T10:25:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://codigoavulso.com.br/categories.html</loc>
-<lastmod>2016-08-02T17:43:06-00:00</lastmod>
+<lastmod>2016-09-14T10:25:59-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://codigoavulso.com.br/personalize-o-seu-terminal-com-prezto-zsh.html</loc>
+<lastmod>2016-08-30T20:27:15-03:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -242,6 +249,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://codigoavulso.com.br/category/linux.html</loc>
+<lastmod>2016-08-30T20:27:15-03:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://codigoavulso.com.br/category/livro.html</loc>
 <lastmod>2016-03-20T14:41:29-03:06</lastmod>
 <changefreq>daily</changefreq>
@@ -334,7 +348,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://codigoavulso.com.br/tag/linux.html</loc>
-<lastmod>2016-07-07T13:04:11-03:06</lastmod>
+<lastmod>2016-08-30T20:27:15-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -356,6 +370,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://codigoavulso.com.br/tag/tutorial.html</loc>
 <lastmod>2016-06-14T14:02:11-03:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://codigoavulso.com.br/tag/operador-bit-a-bit.html</loc>
+<lastmod>2014-06-19T09:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -396,8 +417,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/operador-bit-a-bit.html</loc>
+<loc>http://codigoavulso.com.br/tag/c.html</loc>
 <lastmod>2014-06-19T09:30:00-03:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://codigoavulso.com.br/tag/prezto.html</loc>
+<lastmod>2016-08-30T20:27:15-03:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://codigoavulso.com.br/tag/terminal.html</loc>
+<lastmod>2016-08-30T20:27:15-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -466,8 +501,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/c.html</loc>
-<lastmod>2014-06-19T09:30:00-03:06</lastmod>
+<loc>http://codigoavulso.com.br/tag/colors-themes.html</loc>
+<lastmod>2016-07-07T13:04:11-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -501,6 +536,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://codigoavulso.com.br/tag/bash.html</loc>
+<lastmod>2016-08-30T20:27:15-03:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://codigoavulso.com.br/tag/algoritmo.html</loc>
 <lastmod>2014-06-19T09:30:00-03:06</lastmod>
 <changefreq>daily</changefreq>
@@ -508,8 +550,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://codigoavulso.com.br/tag/colors-themes.html</loc>
-<lastmod>2016-07-07T13:04:11-03:06</lastmod>
+<loc>http://codigoavulso.com.br/tag/zhs.html</loc>
+<lastmod>2016-08-30T20:27:15-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -607,7 +649,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://codigoavulso.com.br/author/michell-stuttgart.html</loc>
-<lastmod>2016-07-31T16:28:36-03:06</lastmod>
+<lastmod>2016-08-30T20:27:15-03:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
